@@ -1,0 +1,69 @@
+'''
+Created on Jun 5, 2024
+
+@author: AshleyReyesVergara
+'''
+from os import path
+
+def mainmenu():
+    global filename
+    print("Welcome to your contact list.")
+    filename = str(input("Do you have a password?"))
+    passno = str("no")
+    if (filename == passno ):
+        passwordmenu();
+    else:
+        existingpass = (input("Enter your password"))
+        existingpass = existingpass + ".txt";
+        ifexists = bool(path.exists(existingpass));
+        if(ifexists == True):
+            contact()
+            
+        
+def contact():
+    
+def passwordmenu():
+    passw= str(input("Enter your new password"))
+    pythfile = open(passw,"w" )
+    print("password created")
+    pythfile.close()
+    
+    
+def main():
+    mainmenu()    
+if __name__=="__main__":
+    main();'''
+Created on Jun 5, 2024
+
+@author: AshleyReyesVergara
+'''
+from os import path
+
+def mainmenu():
+    global filename
+    print("Welcome to your contact list.")
+    filename = str(input("Do you have a password?"))
+    passno = str("no")
+    if (filename == passno ):
+        passwordmenu();
+    else:
+        existingpass = (input("Enter your password"))
+        existingpass = existingpass + ".txt";
+        ifexists = bool(path.exists(existingpass));
+        if(ifexists == True):
+            contact()
+            
+        
+def contact():
+    
+def passwordmenu():
+    passw= str(input("Enter your new password"))
+    pythfile = open(passw,"w" )
+    print("password created")
+    pythfile.close()
+    
+    
+def main():
+    mainmenu()    
+if __name__=="__main__":
+    main();
